@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>DCC121: TABELAS</h1>
     <table>
+      <thead>
         <tr>
-            <td>Nome</td>
-            <td>Altura</td>
-            <td>Peso</td>
-            <td>Idade</td>
+          <th>Nome</th>
+          <th>Altura</th>
+          <th>Peso</th>
+          <th>Idade</th>
         </tr>
+      </thead>
+      <tr>
+        <td>Fulano</td>
+        <td>1,56</td>
+        <td>56</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Beltrano</td>
+        <td>1,90</td>
+        <td>90</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Ciclano</td>
+        <td>1,62</td>
+        <td>61</td>
+        <td>24</td>
+      </tr>
+      <tfoot>
         <tr>
-            <td>Fulano</td>
-            <td>1,56</td>
-            <td>56</td>
-            <td>23 </td>
+          <th scope="row">Media</th>
+          <td>1,69</td>
+          <td>69</td>
+          <td>27</td>
         </tr>
-        <tr>
-            <td>Beltrano</td>
-            <td>1,90</td>
-            <td>90</td>
-            <td>34</td>
-        </tr>
-        <tr>
-            <td>Ciclano</td>
-            <td>1,62</td>
-            <td>61</td>
-            <td>24</td>
-        </tr>
+      </tfoot>
     </table>
-</body>
+  </body>
 
+  <h1>Outro exemplo</h1>
+  <table border="1">
+    <tr>
+      <td colspan="2">1</td>
+      <td>3</td>
+      <td rowspan="3">4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="3" rowspan="2">6</td>
+    </tr>
+    <tr>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+    </tr>
+  </table>
 </html>
